@@ -59,7 +59,7 @@ function generateLeaderLines(controls_array, list_id, end_socket, end_point_anch
         if('icon' in point) {
             let icon = document.createElement("div");
             icon.classList.add("icon");
-            icon.style.backgroundImage = "url('../static/icons/" + point.icon + "')";
+            icon.style.backgroundImage = "url('./static/icons/" + point.icon + "')";
             drag_target.appendChild(icon);
         }
 
