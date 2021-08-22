@@ -1,0 +1,141 @@
+html {
+    font-size: 10px;
+}
+
+
+.controller_container {
+    position: relative;
+    max-width: 90vw;
+    width: 110rem;
+    height: 80rem;
+    /*border: 1px solid black;*/
+}
+
+#controller_image_container {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*border: solid 1px black;*/
+    width: 60rem;
+    height: 42rem;
+}
+
+#controller_image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 28rem;
+    background-image: url("../static/xbox.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.image_point {
+    position: absolute;
+}
+
+#r1_point {    
+    left: 75%;
+    top: 5%;
+}
+
+.drag_target_list {    
+    position: absolute;  
+    height: 70rem;
+    width: 20rem;
+    /*border: solid 1px blue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#right_list {
+    right: 3rem;
+    top: 5rem;
+    align-items: flex-start;
+}
+
+#left_list {
+    left: 3rem;
+    top: 5rem;
+    align-items: flex-end;
+}
+
+.top_list {
+    position: absolute;
+    width: 20rem;
+    /*border: solid 1px blue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#top_list_1 {    
+    left: 30rem;
+    top: 2rem;
+}
+
+#top_list_2 {    
+    right: 30rem;
+    top: 2rem;
+}
+
+.drag_target { 
+    width: 20rem;
+    height: 3rem;
+    border: solid 1px black;
+    margin-bottom: 1rem;;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.drag_target .icon {
+    height: 3rem;
+    width: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#right_list .drag_target, #top_list_2 .drag_target {
+    padding-left: 3rem;
+}
+
+#right_list .drag_target .icon, #top_list_2 .drag_target .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#left_list .drag_target, #top_list_1 .drag_target {
+    padding-right: 3rem;
+}
+
+#left_list .drag_target .icon, #top_list_1 .drag_target .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.drag_target .snap_target {
+    width: 17rem;
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.draggable_text {
+    position: absolute;
+    width: 16.8rem;
+    height: 2.8rem;
+    background-color: aquamarine;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#draggable_text_container{    
+    position: absolute;
+    top: 65rem;
+}
