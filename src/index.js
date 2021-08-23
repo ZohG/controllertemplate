@@ -153,7 +153,8 @@ window.addEventListener('resize', () => {
 //Dragging
 
 let mechanics = ["Ability 1", "Ability 2", "Ability 3", "Consumable 1", "Consumable 2", "Consumable 3", "Jump", "Crouch", "Shoot", "Zoom", "Sprint", "Movement", "Aiming",
-                "Reload", "Primary Weapon", "Secondary Weapon", "Melee Weapon", "Previous Weapon", "Next Weapon", "Interact", "Inventory", "Map", "Menu" ];
+                "Reload", "Primary Weapon", "Secondary Weapon", "Melee Weapon", "Previous Weapon", "Next Weapon", "Weapon Wheel", "Interact", "Inventory", "Map", "Menu",
+                "Select Item", "Use Selected Item", "Item Wheel" ];
 
 function checkSnap(newPosition) {
     for(let target of globalSnapTargetsContainer) {
